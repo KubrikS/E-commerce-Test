@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bsf-rS-eox">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Store - Front-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CollectionViewController" customModule="TestFunBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uZO-ZC-ZOX">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="fhS-dZ-K2G">
+                                    <size key="itemSize" width="370" height="475"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <label key="backgroundView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В магазине пусто" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Si-9d-nnZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <color key="textColor" red="0.333293438" green="0.33335629109999998" blue="0.33328947419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="3PO-od-IoO" customClass="ItemCollectionViewCell" customModule="TestFunBox" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="49.5" width="370" height="475"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yy1-mh-Bk6">
+                                            <rect key="frame" x="0.0" y="0.0" width="370" height="475"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MOW-HR-GXD">
+                                                    <rect key="frame" x="10" y="0.0" width="350" height="425"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hzJ-Ib-mGT">
+                                                            <rect key="frame" x="0.0" y="0.0" width="350" height="141.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Наименование" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86y-jO-b7v">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="141.5"/>
+                                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="uVi-hE-BHd">
+                                                            <rect key="frame" x="0.0" y="141.5" width="350" height="142"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Цена" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywY-KC-o5s">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="144" height="142"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000р" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8N-ej-tYf">
+                                                                    <rect key="frame" x="144" y="0.0" width="206" height="142"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="C4H-f8-NP6">
+                                                            <rect key="frame" x="0.0" y="283.5" width="350" height="141.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Na5-am-0nB">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="246.5" height="141.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10шт" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVh-Az-2hj">
+                                                                    <rect key="frame" x="246.5" y="0.0" width="103.5" height="141.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkn-uN-nhW">
+                                                    <rect key="frame" x="105" y="425" width="160" height="50"/>
+                                                    <color key="backgroundColor" red="1" green="0.58680474760000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="0rN-Yl-C5Y"/>
+                                                        <constraint firstAttribute="height" constant="50" id="xfl-hc-iUP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <state key="normal" title="Купить">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="buyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jc1-KN-5Un"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="MOW-HR-GXD" secondAttribute="trailing" constant="10" id="8N6-rG-tqi"/>
+                                                <constraint firstItem="MOW-HR-GXD" firstAttribute="top" secondItem="yy1-mh-Bk6" secondAttribute="top" id="DfT-1w-hxM"/>
+                                                <constraint firstItem="vkn-uN-nhW" firstAttribute="centerX" secondItem="yy1-mh-Bk6" secondAttribute="centerX" id="M2E-oJ-pQc"/>
+                                                <constraint firstAttribute="bottom" secondItem="MOW-HR-GXD" secondAttribute="bottom" constant="50" id="aWa-tc-eiF"/>
+                                                <constraint firstItem="vkn-uN-nhW" firstAttribute="top" secondItem="MOW-HR-GXD" secondAttribute="bottom" id="rwz-za-VwP"/>
+                                                <constraint firstItem="MOW-HR-GXD" firstAttribute="leading" secondItem="yy1-mh-Bk6" secondAttribute="leading" constant="10" id="uz5-rz-ViQ"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="370" height="475"/>
+                                        <connections>
+                                            <outlet property="countLabel" destination="uVh-Az-2hj" id="Etc-j8-ask"/>
+                                            <outlet property="nameLabel" destination="86y-jO-b7v" id="FOl-3t-sbf"/>
+                                            <outlet property="priceLabel" destination="t8N-ej-tYf" id="Evd-vq-iRd"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uZO-ZC-ZOX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Eki-Ih-0C3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uZO-ZC-ZOX" secondAttribute="trailing" id="ZoM-mJ-P0x"/>
+                            <constraint firstItem="uZO-ZC-ZOX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="imO-sA-HBE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uZO-ZC-ZOX" secondAttribute="bottom" id="kBN-QM-fJ1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Store-Front" image="cart" catalog="system" selectedImage="cart.fill" id="8Y6-QH-1x6"/>
+                    <navigationItem key="navigationItem" title="Store - Front" id="NsO-KK-sQe"/>
+                    <connections>
+                        <outlet property="collectionView" destination="uZO-ZC-ZOX" id="Mkx-r6-rCO"/>
+                        <outlet property="notItemLabel" destination="1Si-9d-nnZ" id="XTT-BC-32o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1168.8" y="1121.2893553223389"/>
+        </scene>
+        <!--Back - End-->
+        <scene sceneID="TQh-OJ-7Q2">
+            <objects>
+                <tableViewController storyboardIdentifier="backEnd" id="TGM-x1-8s1" customClass="TableViewController" customModule="TestFunBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lwh-Sz-cAJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="backEndCell" id="56L-fd-wmP" customClass="BackEndTableViewCell" customModule="TestFunBox" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="56L-fd-wmP" id="fsT-hE-pYr">
+                                    <rect key="frame" x="0.0" y="0.0" width="348" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="CyU-AG-fBF">
+                                            <rect key="frame" x="16" y="11" width="324" height="21"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Наименование" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="j7a-lD-gzs">
+                                                    <rect key="frame" x="0.0" y="0.0" width="260.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1шт" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="IM0-5u-9mv">
+                                                    <rect key="frame" x="260.5" y="0.0" width="63.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.24867147840000001" green="0.24867147840000001" blue="0.24867147840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="CyU-AG-fBF" secondAttribute="bottom" id="8fd-us-Smw"/>
+                                        <constraint firstItem="CyU-AG-fBF" firstAttribute="top" secondItem="fsT-hE-pYr" secondAttribute="topMargin" id="YcR-b1-XuS"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="CyU-AG-fBF" secondAttribute="trailing" id="svB-4x-nTL"/>
+                                        <constraint firstItem="CyU-AG-fBF" firstAttribute="leading" secondItem="fsT-hE-pYr" secondAttribute="leadingMargin" id="vrI-4L-cKe"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="countLabel" destination="IM0-5u-9mv" id="sMc-gb-tlf"/>
+                                    <outlet property="nameLabel" destination="j7a-lD-gzs" id="TMB-ls-oyl"/>
+                                    <segue destination="cV6-Lq-4K4" kind="show" identifier="editSegue" id="098-QV-8yD"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="TGM-x1-8s1" id="gqK-xg-4Jp"/>
+                            <outlet property="delegate" destination="TGM-x1-8s1" id="ycH-jY-Wzl"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Back-End" image="rectangle.grid.1x2" catalog="system" selectedImage="rectangle.grid.1x2.fill" id="6W8-jV-qIt"/>
+                    <navigationItem key="navigationItem" title="Back - End" id="r5k-EL-BYo">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="94G-JN-1iL"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus.app" catalog="system" id="rlo-C9-Cu7">
+                            <color key="tintColor" red="0.24867147840000001" green="0.24867147840000001" blue="0.24867147840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="cV6-Lq-4K4" kind="presentation" modalPresentationStyle="pageSheet" id="Txe-3a-GoK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="lwh-Sz-cAJ" id="qbe-dE-3Dq"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nll-Fi-NYa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024.8" y="1120.3898050974515"/>
+        </scene>
+        <!--Editing Table View Controller-->
+        <scene sceneID="IiD-m2-gSC">
+            <objects>
+                <tableViewController storyboardIdentifier="editingVC" id="3gm-dZ-brS" customClass="EditingTableViewController" customModule="TestFunBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="fZl-DI-Dzv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Наименование" id="qmO-fC-omH">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="nameCell" rowHeight="43.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ir5-ap-lGo" customClass="EditingTableViewCell" customModule="TestFunBox" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ir5-ap-lGo" id="cvQ-1h-DgM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Наименование товара" minimumFontSize="17" id="W9B-FN-NKM">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="changeTextField:" destination="3gm-dZ-brS" eventType="editingChanged" id="Vjf-vB-FWb"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Цена" id="oEk-Ua-OFc">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="priceCell" rowHeight="43.5" translatesAutoresizingMaskIntoConstraints="NO" id="jfH-Mx-42j" customClass="EditingTableViewCell" customModule="TestFunBox" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="155" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jfH-Mx-42j" id="xfz-VE-04k">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Цена в рублях" minimumFontSize="17" id="5bA-Ve-gVZ">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="changeTextField:" destination="3gm-dZ-brS" eventType="editingChanged" id="gu5-9R-NM2"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Количество" id="0qc-PW-014">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="countCell" rowHeight="43.5" translatesAutoresizingMaskIntoConstraints="NO" id="I6W-gS-53B" customClass="EditingTableViewCell" customModule="TestFunBox" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="254.5" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I6W-gS-53B" id="N8p-MA-cGh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Количество едениц" minimumFontSize="17" id="fch-Oh-Zz7">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="changeTextField:" destination="3gm-dZ-brS" eventType="editingChanged" id="77H-O8-W4m"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="3gm-dZ-brS" id="zVn-4c-G9H"/>
+                            <outlet property="delegate" destination="3gm-dZ-brS" id="hQT-NF-8bk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="gu5-q7-HBV">
+                        <barButtonItem key="leftBarButtonItem" title="Отмена" id="Dlb-yy-86M">
+                            <connections>
+                                <action selector="cancelButton:" destination="3gm-dZ-brS" id="VM9-pj-JCe"/>
+                                <segue destination="QW9-g3-ykH" kind="unwind" unwindAction="unwind:" id="ZM3-Cy-v3H"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Сохранить" style="done" id="s8b-Uo-QlB">
+                            <connections>
+                                <segue destination="QW9-g3-ykH" kind="unwind" identifier="saveSegue" unwindAction="unwind:" id="2mm-yj-Oen"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="countTextField" destination="fch-Oh-Zz7" id="QLf-7e-LaS"/>
+                        <outlet property="nameTextField" destination="W9B-FN-NKM" id="oQV-Gf-WEW"/>
+                        <outlet property="priceTextField" destination="5bA-Ve-gVZ" id="aL1-6W-ys7"/>
+                        <outlet property="saveButton" destination="s8b-Uo-QlB" id="Jz6-DG-WfL"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="28e-h8-TFI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="QW9-g3-ykH" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3821.5999999999999" y="1119.4902548725638"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="vii-WC-Vbd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fyx-mU-Bn4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="D8H-sb-Hbd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fUn-eY-H0K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jDQ-9j-t0c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IlZ-wB-TT2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="411"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="RmU-vK-gT5">
+            <objects>
+                <navigationController id="EGt-gE-fMt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="SkR-i1-71A"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i78-yy-vwA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TGM-x1-8s1" kind="relationship" relationship="rootViewController" id="LMw-hU-1sw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U0x-vg-OPh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2025" y="411"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="MUm-SG-Q9p">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bsf-rS-eox" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="OeU-FW-3QJ"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" itemPositioning="fill" id="MeP-3F-ope">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Fyx-mU-Bn4" kind="relationship" relationship="viewControllers" id="SLp-EH-zpL"/>
+                        <segue destination="EGt-gE-fMt" kind="relationship" relationship="viewControllers" id="r4H-ej-U67"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jvK-f4-qwN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1606" y="-406"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wBq-hS-yVn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cV6-Lq-4K4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="5Bo-FX-bDV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ciw-3y-clZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3gm-dZ-brS" kind="relationship" relationship="rootViewController" id="brO-e0-gLK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wfh-me-1Xv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2940" y="1120"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="098-QV-8yD"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
+        <image name="rectangle.grid.1x2" catalog="system" width="128" height="101"/>
+        <image name="rectangle.grid.1x2.fill" catalog="system" width="128" height="101"/>
+    </resources>
+</document>
